@@ -1,3 +1,6 @@
+h2 {
+  font-family: "nunito"; }
+
 #cover {
   width: 100% !important; }
 
@@ -49,6 +52,9 @@
   font-weight: bold;
   margin-top: -120px;
   margin-bottom: 35px; }
+
+.jumbotron {
+  background-color: #d8d9da; }
 
 #background {
   position: relative;
@@ -398,7 +404,7 @@ pre.prettyprint {
     visibility: visible; } }
 #myFooter {
   background-color: #d29fbb;
-  color: white;
+  color: #191919;
   padding-top: 30px; }
 
 #myFooter .footer-copyright {
@@ -425,17 +431,17 @@ pre.prettyprint {
 
 #myFooter h5 {
   font-size: 18px;
-  color: white;
+  color: #191919;
   font-weight: bold;
   margin-top: 30px; }
 
 #myFooter h2 a {
   font-size: 50px;
   text-align: center;
-  color: #fff; }
+  color: #191919; }
 
 #myFooter a {
-  color: #d2d1d1;
+  color: #191919;
   text-decoration: none; }
 
 #myFooter a:hover,
@@ -469,7 +475,7 @@ pre.prettyprint {
 
 #myFooter .btn {
   color: white;
-  background-color: #d84b6b;
+  background-color: #f6d9ea;
   border-radius: 20px;
   border: none;
   width: 150px;

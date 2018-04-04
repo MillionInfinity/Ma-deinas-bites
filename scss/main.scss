@@ -1,10 +1,7 @@
 
-$primaryfont:'Great Vibes', cursive;
-$secondaryfont: 'Alex Brush', cursive;
-$h1font: 'Monsieur La Doulaise', cursive;
-$mainfont: 'Poiret One', cursive;
+
 $primacolor:#c0e8dd;
-$Secfont:#f6d9ea;
+$Seccolor:#f6d9ea;
 $tircolor:#d2d5ea;
 $newcolor:#d29fbb;
 $bestselerfont:'nunito';
@@ -12,19 +9,33 @@ $parafont:' PT Serif';
 $fontcolor:#191919;
 
 // main nav and header
+h2{
+    font-family: $bestselerfont;
+    
+}
+h3{
+    margin-top:-50px;
+}
 #cover{
     width:100% !important;
 }
-#header{ //main header
-   font-family: $mainfont;
-    color:$newcolor;
+#header { //main header
+   
+    margin-top:-25px;
+    margin-bottom: 40px;
+   
+   
+}
+#header h1{
+ z-index: 80;
+ font-family: $parafont;
+    color:$fontcolor;
     text-align: center;
     font-weight: 300;
-    font-size: 84px;
-    margin-top:-55px;
-    margin-bottom: 40px;
-    line-height: 90%;
+    font-size: 44px;
+     line-height: 90%;
 }
+
 .navbar{
     margin-top: -65px;
 }
@@ -44,26 +55,46 @@ margin:15px;
      }
  }
 }
-.container-fluid p{
+.container-fluid h2{
 font-size:50px;
-color:$newcolor; 
-z-index: 4;
+color:white; 
+z-index: 56;
 position: relative;
-top:-554px;
-font-family:$primaryfont;
+top:-454px;
+font-family:$bestselerfont;
 left:50px;
 }
-.container-fluid .mi{
+#background{
+    font-size:50px;
+color:$fontcolor; 
+z-index: 514;
+position: absolute;
+top:-155px;
+font-family:$bestselerfont;
+left:10px;
+}
+// .container-fluid .mi{
+//     position: relative;
+//     left:150px;
+// }
+#shop{
     position: relative;
-    left:150px;
+    top:-250px;
+    left:200px;
+
 }
 // first page done
  #seller{
-    font-family:$mainfont;
+    font-family:$bestselerfont;
     font-weight: bold;
     margin-top:-120px;
     margin-bottom: 35px;
     
+}
+.jumbotron
+{
+    margin-top:100px;    
+    background-color:rgb(216, 217, 218);
 }
 #background {
     position: relative;
@@ -88,7 +119,7 @@ left:50px;
        
     }
 }
-#background h2{
+ .texts h2{
     margin-bottom: 250px !important;
     padding-bottom: 250px;
 }
@@ -130,7 +161,7 @@ left:50px;
 body {
 	margin-top: 60px;
 	font-size: 14px;
-	font-family: "Helvetica Nueue",Arial,Verdana,sans-serif;
+	// font-family: "Helvetica Nueue",Arial,Verdana,sans-serif;
 	background-color: #E5E9ED;
 }
 .btn:hover,
@@ -428,7 +459,7 @@ body {
 
     .back {
         visibility: hidden;
-        -ms-transition: all 0.2s cubic-bezier(.92,.01,.83,.67);
+        // -ms-transition: all 0.2s cubic-bezier(.92,.01,.83,.67);
     }
     .front{
         z-index: 4;
@@ -446,8 +477,9 @@ body {
 ////footer start 
 #myFooter {
     background-color:$newcolor;
-    color: white;
+    color: $fontcolor;
     padding-top: 30px;
+   
 }
 
 #myFooter .footer-copyright {
@@ -463,7 +495,7 @@ body {
 
 #myFooter .navbar-brand {
     margin-top: 45px;
-    height: 65px;
+    height: 55px;
 }
 
 #myFooter .footer-copyright p {
@@ -479,7 +511,7 @@ body {
 
 #myFooter h5 {
     font-size: 18px;
-    color: white;
+    color: $fontcolor;
     font-weight: bold;
     margin-top: 30px;
 }
@@ -487,11 +519,11 @@ body {
 #myFooter h2 a{
     font-size: 50px;
     text-align: center;
-    color: #fff;
+    color:$fontcolor;
 }
 
 #myFooter a {
-    color: #d2d1d1;
+    color: $fontcolor;
     text-decoration: none;
 }
 
@@ -534,7 +566,7 @@ body {
 
 #myFooter .btn {
     color: white;
-    background-color: #d84b6b;
+    background-color: $Seccolor;
     border-radius: 20px;
     border: none;
     width: 150px;
@@ -584,4 +616,10 @@ body{
    margin-top:25px;
    margin-bottom: -100px;
    margin-left:50px;
+}
+#itsMe{
+    border-radius:50%;
+    align-items: center;
+     justify-content: space-around;
+    display: flex;
 }

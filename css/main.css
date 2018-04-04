@@ -2,7 +2,7 @@
   width: 100% !important; }
 
 #header {
-  font-family: "Poiret One", cursive;
+  font-family: "nunito";
   color: #d29fbb;
   text-align: center;
   font-weight: 300;
@@ -32,15 +32,20 @@
   z-index: 4;
   position: relative;
   top: -554px;
-  font-family: "Great Vibes", cursive;
+  font-family: "nunito";
   left: 50px; }
 
 .container-fluid .mi {
   position: relative;
   left: 150px; }
 
+#shop {
+  position: relative;
+  top: -250px;
+  left: 200px; }
+
 #seller {
-  font-family: "Poiret One", cursive;
+  font-family: "nunito";
   font-weight: bold;
   margin-top: -120px;
   margin-bottom: 35px; }
@@ -382,8 +387,7 @@ pre.prettyprint {
     backface-visibility: visible; }
 
   .back {
-    visibility: hidden;
-    -ms-transition: all 0.2s cubic-bezier(0.92, 0.01, 0.83, 0.67); }
+    visibility: hidden; }
 
   .front {
     z-index: 4; }
@@ -408,7 +412,7 @@ pre.prettyprint {
 
 #myFooter .navbar-brand {
   margin-top: 45px;
-  height: 65px; }
+  height: 55px; }
 
 #myFooter .footer-copyright p {
   margin: 10px;

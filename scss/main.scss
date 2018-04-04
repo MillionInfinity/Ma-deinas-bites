@@ -1,0 +1,587 @@
+
+$primaryfont:'Great Vibes', cursive;
+$secondaryfont: 'Alex Brush', cursive;
+$h1font: 'Monsieur La Doulaise', cursive;
+$mainfont: 'Poiret One', cursive;
+$primacolor:#c0e8dd;
+$Secfont:#f6d9ea;
+$tircolor:#d2d5ea;
+$newcolor:#d29fbb;
+$bestselerfont:'nunito';
+$parafont:' PT Serif';
+$fontcolor:#191919;
+
+// main nav and header
+#cover{
+    width:100% !important;
+}
+#header{ //main header
+   font-family: $mainfont;
+    color:$newcolor;
+    text-align: center;
+    font-weight: 300;
+    font-size: 84px;
+    margin-top:-55px;
+    margin-bottom: 40px;
+    line-height: 90%;
+}
+.navbar{
+    margin-top: -65px;
+}
+.breadcrumb li{ //nav fonts
+text-decoration: none;
+margin:15px;
+
+ & a{
+     font-weight: 900px;
+     color:$fontcolor;
+     text-decoration: none;
+     &:hover{
+         color:$newcolor;
+     }
+     &:active{
+         color: $primacolor;
+     }
+ }
+}
+.container-fluid p{
+font-size:50px;
+color:$newcolor; 
+z-index: 4;
+position: relative;
+top:-554px;
+font-family:$primaryfont;
+left:50px;
+}
+.container-fluid .mi{
+    position: relative;
+    left:150px;
+}
+// first page done
+ #seller{
+    font-family:$mainfont;
+    font-weight: bold;
+    margin-top:-120px;
+    margin-bottom: 35px;
+    
+}
+#background {
+    position: relative;
+    z-index: 1;
+    
+    &:before {
+        border-top: 2px solid $fontcolor;
+        content:"";
+        margin: 0 auto; /* this centers the line to the full width specified */
+        position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+        top: 50%; left: 0; right: 0; bottom: 0;
+        width: 95%;
+        z-index: -1;
+    }
+
+    span { 
+        /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
+        background:  #E5E9ED; 
+        border:2px solid $fontcolor;
+        padding: 0 15px;
+        margin-bottom: 150px; 
+       
+    }
+}
+#background h2{
+    margin-bottom: 250px !important;
+    padding-bottom: 250px;
+}
+.main-section{
+    background-color: #f1f1f1;
+    padding: 20px
+}
+.card-part{
+    border-radius: 5px;
+    margin:0px;
+    border:1px solid #DDDDDD;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+.card-title h1{
+     
+    margin:0px;
+    color:#4C4C4C;
+    font-size:23px;
+    padding: 15px 0px 8px 0px;
+}
+.card-description p{
+    min-height:10px; 
+    overflow: hidden;
+    color:#848484;
+    margin:0px;
+    text-align: justify;
+}
+.card-cart a{
+    border-radius:0px;
+    font-size: 11px;
+}
+.card-cart{
+    padding-top: 10px;
+}
+
+////main start
+
+body {
+	margin-top: 60px;
+	font-size: 14px;
+	font-family: "Helvetica Nueue",Arial,Verdana,sans-serif;
+	background-color: #E5E9ED;
+}
+.btn:hover,
+.btn:focus,
+.btn:active{
+    outline: 0 !important;
+}
+/* entire container, keeps perspective */
+.card-container {
+	  -webkit-perspective: 800px;
+   -moz-perspective: 800px;
+     -o-perspective: 800px;
+        perspective: 800px;
+        margin-bottom: 30px;
+}
+/* flip the pane when hovered */
+.card-container:not(.manual-flip):hover .card,
+.card-container.hover.manual-flip .card{
+	-webkit-transform: rotateY( 180deg );
+-moz-transform: rotateY( 180deg );
+ -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+
+.card-container.static:hover .card,
+.card-container.static.hover .card {
+	-webkit-transform: none;
+-moz-transform: none;
+ -o-transform: none;
+    transform: none;
+}
+/* flip speed goes here */
+.card {
+	 -webkit-transition: -webkit-transform .5s;
+   -moz-transition: -moz-transform .5s;
+     -o-transition: -o-transform .5s;
+        transition: transform .5s;
+-webkit-transform-style: preserve-3d;
+   -moz-transform-style: preserve-3d;
+     -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	-webkit-backface-visibility: hidden;
+   -moz-backface-visibility: hidden;
+     -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #FFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+		-webkit-transform: rotateY( 180deg );
+   -moz-transform: rotateY( 180deg );
+     -o-transform: rotateY( 180deg );
+        transform: rotateY( 180deg );
+        z-index: 3;
+}
+
+.back .btn-simple{
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+}
+/*        Style       */
+
+
+.card{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 4px;
+    color: #444444;
+}
+.card-container, .front, .back {
+	width: 100%;
+	height: 420px;
+	border-radius: 4px;
+}
+.card .cover{
+    height: 105px;
+    overflow: hidden;
+    border-radius: 4px 4px 0 0;
+}
+.card .cover img{
+    width: 100%;
+}
+.card .user{
+    border-radius: 50%;
+    display: block;
+    height: 120px;
+    margin: -55px auto 0;
+    overflow: hidden;
+    width: 120px;
+}
+.card .user img{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 4px solid #FFFFFF;
+    width: 100%;
+}
+
+.card .content{
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    padding: 10px 20px 20px;
+}
+.card .content .main {
+    min-height: 160px;
+}
+.card .back .content .main {
+    height: 215px;
+}
+.card .name {
+    font-size: 22px;
+    line-height: 28px;
+    margin: 10px 0 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+.card h5{
+    margin: 5px 0;
+    font-weight: 400;
+    line-height: 20px;
+}
+.card .profession{
+    color: #999999;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card .footer {
+    border-top: 1px solid #EEEEEE;
+    color: #999999;
+    margin: 30px 0 0;
+    padding: 10px 0 0;
+    text-align: center;
+}
+.card .footer .social-links{
+    font-size: 18px;
+}
+.card .footer .social-links a{
+    margin: 0 7px;
+}
+.card .footer .btn-simple{
+    margin-top: -6px;
+}
+.card .header {
+    padding: 15px 20px;
+    height: 90px;
+}
+.card .motto{
+    border-bottom: 1px solid #EEEEEE;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.card .stats-container{
+	width: 100%;
+	margin-top: 50px;
+}
+.card .stats{
+	display: block;
+	float: left;
+	width: 33.333333%;
+	text-align: center;
+}
+
+.card .stats:first-child{
+	border-right: 1px solid #EEEEEE;
+}
+.card .stats:last-child{
+	border-left: 1px solid #EEEEEE;
+}
+.card .stats h4{
+	font-weight: 300;
+	margin-bottom: 5px;
+}
+.card .stats p{
+	color: #777777;
+}
+/*      Just for presentation        */
+
+// 
+.title small{
+    font-size: 17px;
+    color: #999;
+    text-transform: uppercase;
+    margin: 0;
+}
+.space-30{
+	height: 30px;
+	display: block;
+}
+.space-50{
+    height: 50px;
+    display: block;
+}
+.space-200{
+    height: 200px;
+    display: block;
+}
+.white-board{
+    background-color: #FFFFFF;
+    min-height: 200px;
+    padding: 60px 60px 20px;
+}
+.ct-heart{
+    color: #F74933;
+}
+
+ pre.prettyprint{
+    background-color: #ffffff;
+    border: 1px solid #999;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: left;
+}
+.atv, .str{
+    color: #05AE0E;
+}
+.tag, .pln, .kwd{
+     color: #3472F7;
+}
+.atn{
+  color: #2C93FF;
+}
+.pln{
+   color: #333;
+}
+.com{
+    color: #999;
+}
+
+.btn-simple{
+    opacity: .8;
+    color: #666666;
+    background-color: transparent;
+}
+
+.btn-simple:hover,
+.btn-simple:focus{
+    background-color: transparent;
+    box-shadow: none;
+    opacity: 1;
+}
+.btn-simple i{
+    font-size: 16px;
+}
+
+.navbar-brand-logo{
+    padding: 0;
+}
+.navbar-brand-logo .logo{
+    border: 1px solid #333333;
+    border-radius: 50%;
+    float: left;
+    overflow: hidden;
+    width: 60px;
+}
+.navbar .navbar-brand-logo .brand{
+    color: #FFFFFF;
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 60px;
+}
+.navbar-default .navbar-brand-logo .brand{
+    color: #555;
+}
+
+
+/*       Fix bug for IE      */
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .front, .back{
+        -ms-backface-visibility: visible;
+        backface-visibility: visible;
+    }
+
+    .back {
+        visibility: hidden;
+        -ms-transition: all 0.2s cubic-bezier(.92,.01,.83,.67);
+    }
+    .front{
+        z-index: 4;
+    }
+    .card-container:not(.manual-flip):hover .back,
+    .card-container.manual-flip.hover .back{
+        z-index: 5;
+        visibility: visible;
+    }
+}
+
+
+
+
+////footer start 
+#myFooter {
+    background-color:$newcolor;
+    color: white;
+    padding-top: 30px;
+}
+
+#myFooter .footer-copyright {
+    background-color: #333333;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .row {
+    margin-bottom: 60px;
+}
+
+#myFooter .navbar-brand {
+    margin-top: 45px;
+    height: 65px;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter h2 a{
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+     z-index: 5;
+}
+
+#myFooter .social-networks a {
+    font-size: 32px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover {
+    text-decoration: none;
+}
+
+#myFooter .facebook:hover {
+    color: #0077e2;
+    
+}
+
+#myFooter .google:hover {
+    color: #ef1a1a;
+}
+
+#myFooter .twitter:hover {
+    color: #00aced;
+}
+
+#myFooter .btn {
+    color: white;
+    background-color: #d84b6b;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+}
+
+
+/* CSS used for positioning the footers at the bottom of the page. */
+/* You can remove this. */
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    // height: 100%;
+}
+
+.content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
+}
+
+#myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+   margin-top:150px;
+}
+///image
+
+.foot{
+   display:inline-flex;
+   margin-top:25px;
+   margin-bottom: -100px;
+   margin-left:50px;
+}

@@ -4,6 +4,10 @@ h2 {
 h3 {
   margin-top: -50px; }
 
+h4 {
+  font-family: " PT Serif";
+  font-size: 15px; }
+
 #cover {
   width: 100% !important; }
 
@@ -43,6 +47,10 @@ h3 {
   top: -454px;
   font-family: "nunito";
   left: 50px; }
+
+#colapse button {
+  margin-top: 505px;
+  z-index: 500; }
 
 #background {
   font-size: 50px;

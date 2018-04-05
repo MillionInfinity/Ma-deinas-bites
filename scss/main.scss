@@ -16,6 +16,10 @@ h2{
 h3{
     margin-top:-50px;
 }
+h4{
+    font-family: $parafont;
+    font-size: 15px;
+}
 #cover{
     width:100% !important;
 }
@@ -63,6 +67,11 @@ position: relative;
 top:-454px;
 font-family:$bestselerfont;
 left:50px;
+}
+#colapse button{
+    margin-top:505px;
+    z-index: 500;
+
 }
 #background{
     font-size:50px;

@@ -1,6 +1,3 @@
-h2 {
-  font-family: "nunito"; }
-
 h3 {
   margin-top: -50px; }
 
@@ -53,17 +50,17 @@ h4 {
   z-index: 500; }
 
 #background {
-  font-size: 50px;
+  font-size: 20px;
   color: #191919;
   z-index: 514;
   position: absolute;
   top: -155px;
-  font-family: "nunito";
+  font-family: "nunito" !important;
   left: 10px; }
 
 #shop {
   position: relative;
-  top: -250px;
+  top: -150px;
   left: 200px; }
 
 #seller {
@@ -100,8 +97,9 @@ h4 {
     margin-bottom: 150px; }
 
 .texts h2 {
-  margin-bottom: 250px !important;
-  padding-bottom: 250px; }
+  margin-bottom: 350px !important;
+  padding-bottom: 50px;
+  font-size: 50px; }
 
 .main-section {
   background-color: #f1f1f1;
@@ -538,5 +536,36 @@ body {
   align-items: center;
   justify-content: space-around;
   display: flex; }
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px; }
+
+.active, .collapsible:hover {
+  background-color: #555; }
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px; }
+
+.active:after {
+  content: "\2212"; }
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1; }
 
 /*# sourceMappingURL=main.css.map */

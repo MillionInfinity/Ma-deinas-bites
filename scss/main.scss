@@ -9,10 +9,10 @@ $parafont:' PT Serif';
 $fontcolor:#191919;
 
 // main nav and header
-h2{
-    font-family: $bestselerfont;
+// h2{
+//     font-family: $parafont;
     
-}
+// }
 h3{
     margin-top:-50px;
 }
@@ -74,12 +74,12 @@ left:50px;
 
 }
 #background{
-    font-size:50px;
+    font-size:20px;
 color:$fontcolor; 
 z-index: 514;
 position: absolute;
 top:-155px;
-font-family:$bestselerfont;
+font-family:$bestselerfont !important;
 left:10px;
 }
 // .container-fluid .mi{
@@ -88,7 +88,7 @@ left:10px;
 // }
 #shop{
     position: relative;
-    top:-250px;
+    top:-150px;
     left:200px;
 
 }
@@ -108,6 +108,7 @@ left:10px;
 #background {
     position: relative;
     z-index: 1;
+    // font-family: $bestselerfont;
     
     &:before {
         border-top: 2px solid $fontcolor;
@@ -129,8 +130,9 @@ left:10px;
     }
 }
  .texts h2{
-    margin-bottom: 250px !important;
-    padding-bottom: 250px;
+    margin-bottom: 350px !important;
+    padding-bottom: 50px;
+    font-size: 50px;
 }
 .main-section{
     background-color: #f1f1f1;
@@ -632,3 +634,46 @@ body{
      justify-content: space-around;
     display: flex;
 }
+
+//collapse function
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+// #background h2{
+//     font-family: $bestselerfont !important;
+// }
+

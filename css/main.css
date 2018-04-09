@@ -1,8 +1,12 @@
-h2 {
-  font-family: "nunito"; }
-
 h3 {
   margin-top: -50px; }
+
+h4 {
+  font-family: " PT Serif";
+  font-size: 15px; }
+
+h6 {
+  font-size: 15px; }
 
 #cover {
   width: 100% !important; }
@@ -44,28 +48,43 @@ h3 {
   font-family: "nunito";
   left: 50px; }
 
+#colapse button {
+  margin-top: 505px;
+  z-index: 500; }
+
 #background {
-  font-size: 50px;
+  font-weight: bold;
+  font-size: 12px;
   color: #191919;
-  z-index: 514;
+  z-index: 14;
   position: absolute;
-  top: -155px;
-  font-family: "nunito";
+  top: -150px;
+  font-family: Arial, Helvetica, sans-serif !important;
   left: 10px; }
+
+#background span {
+  background: #E5E9ED;
+  border: 2px solid #191919;
+  padding: 10px; }
+
+.container-fluid .mi {
+  position: relative;
+  left: 150px; }
 
 #shop {
   position: relative;
-  top: -250px;
+  top: -150px;
   left: 200px; }
 
 #seller {
-  font-family: "nunito";
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin-top: -120px;
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  font-size: 20PX; }
 
 .jumbotron {
-  margin-top: 100px;
+  margin-top: 200px;
   background-color: #d8d9da; }
 
 #background {
@@ -84,16 +103,11 @@ h3 {
     bottom: 0;
     width: 95%;
     z-index: -1; }
-  #background span {
-    /* to hide the lines from behind the text, you have to set the background color the same as the container */
-    background: #E5E9ED;
-    border: 2px solid #191919;
-    padding: 0 15px;
-    margin-bottom: 150px; }
 
 .texts h2 {
-  margin-bottom: 250px !important;
-  padding-bottom: 250px; }
+  margin-bottom: 350px !important;
+  padding-bottom: 50px;
+  font-size: 50px; }
 
 .main-section {
   background-color: #f1f1f1;
@@ -125,6 +139,14 @@ h3 {
 
 .card-cart {
   padding-top: 10px; }
+
+.col-sm-6 #abc {
+  margin-right: -500px;
+  margin-left: 15px; }
+
+.col-sm-6 #bcd {
+  margin-left: 5px;
+  margin-right: -5px; }
 
 body {
   margin-top: 60px;
@@ -431,7 +453,7 @@ pre.prettyprint {
   margin-top: 45px;
   height: 55px; }
 
-#myFooter .footer-copyright p {
+#myFooter .footer-copyright {
   margin: 10px;
   color: #ccc; }
 
@@ -441,19 +463,24 @@ pre.prettyprint {
   line-height: 1.7; }
 
 #myFooter h5 {
-  font-size: 18px;
+  font-size: 13px;
   color: #191919;
-  font-weight: bold;
   margin-top: 30px; }
 
 #myFooter h2 a {
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
   color: #191919; }
 
+span,
+.hours,
+.address,
 #myFooter a {
-  color: #191919;
-  text-decoration: none; }
+  color: black;
+  font-family: " PT Serif";
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600; }
 
 #myFooter a:hover,
 #myFooter a:focus {
@@ -495,6 +522,9 @@ pre.prettyprint {
   margin-top: 10px;
   line-height: 25px; }
 
+#open {
+  margin-right: 60px; }
+
 @media screen and (max-width: 767px) {
   #myFooter {
     text-align: center; } }
@@ -530,5 +560,43 @@ body {
   align-items: center;
   justify-content: space-around;
   display: flex; }
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px; }
+
+.active, .collapsible:hover {
+  background-color: #555; }
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px; }
+
+.active:after {
+  content: "\2212"; }
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1; }
+
+.col-md-4 {
+  margin-right: -35px;
+  margin-bottom: -115px; }
+
+.row {
+  margin-left: 105px; }
 
 /*# sourceMappingURL=main.css.map */

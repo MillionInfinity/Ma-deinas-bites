@@ -9,12 +9,19 @@ $parafont:' PT Serif';
 $fontcolor:#191919;
 
 // main nav and header
-h2{
-    font-family: $bestselerfont;
+// h2{
+//     font-family: $parafont;
     
-}
+// }
 h3{
     margin-top:-50px;
+}
+h4{
+    font-family: $parafont;
+    font-size: 15px;
+}
+h6{
+    font-size: 15px;  //for the coockies price
 }
 #cover{
     width:100% !important;
@@ -64,41 +71,53 @@ top:-454px;
 font-family:$bestselerfont;
 left:50px;
 }
-#background{
-    font-size:50px;
+#colapse button{
+    margin-top:505px;
+    z-index: 500;
+
+}
+#background{    //all cookies
+font-weight: bold;
+font-size:12px;
 color:$fontcolor; 
-z-index: 514;
+z-index: 14;
 position: absolute;
-top:-155px;
-font-family:$bestselerfont;
+top:-150px;
+font-family:Arial, Helvetica, sans-serif !important;
 left:10px;
 }
-// .container-fluid .mi{
-//     position: relative;
-//     left:150px;
-// }
+#background span{
+      background : #E5E9ED;
+      border:2px solid $fontcolor; // paddig: 0 15px;
+      padding: 10px;
+}
+.container-fluid .mi{
+    position: relative;
+    left:150px;
+}
 #shop{
     position: relative;
-    top:-250px;
+    top:-150px;
     left:200px;
 
 }
 // first page done
  #seller{
-    font-family:$bestselerfont;
+    font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-top:-120px;
     margin-bottom: 35px;
-    
+    font-size: 20PX;
 }
 .jumbotron
 {
-    margin-top:100px;    
+    margin-top:200px;    
     background-color:rgb(216, 217, 218);
 }
 #background {
     position: relative;
     z-index: 1;
+    // font-family: $bestselerfont;
     
     &:before {
         border-top: 2px solid $fontcolor;
@@ -110,18 +129,11 @@ left:10px;
         z-index: -1;
     }
 
-    span { 
-        /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
-        background:  #E5E9ED; 
-        border:2px solid $fontcolor;
-        padding: 0 15px;
-        margin-bottom: 150px; 
-       
-    }
-}
+  }
  .texts h2{
-    margin-bottom: 250px !important;
-    padding-bottom: 250px;
+    margin-bottom: 350px !important;
+    padding-bottom: 50px;
+    font-size: 50px;
 }
 .main-section{
     background-color: #f1f1f1;
@@ -157,7 +169,17 @@ left:10px;
 }
 
 ////main start
-
+.col-sm-6 #abc {
+   margin-right: -500px;
+   margin-left: 15px; 
+}
+// .col-sm-6 #cde {
+//     // margin-left:px;
+// }
+.col-sm-6 #bcd {
+    margin-left:5px;
+    margin-right:-5px;
+}
 body {
 	margin-top: 60px;
 	font-size: 14px;
@@ -498,7 +520,7 @@ body {
     height: 55px;
 }
 
-#myFooter .footer-copyright p {
+#myFooter .footer-copyright {
     margin: 10px;
     color: #ccc;
 }
@@ -510,21 +532,26 @@ body {
 }
 
 #myFooter h5 {
-    font-size: 18px;
+    font-size: 13px;
     color: $fontcolor;
-    font-weight: bold;
+    // font-weight: old;
     margin-top: 30px;
 }
 
 #myFooter h2 a{
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     color:$fontcolor;
 }
-
+span,
+.hours,
+.address,
 #myFooter a {
-    color: $fontcolor;
+    color: black;
+    font-family: $parafont;
     text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 #myFooter a:hover,
@@ -575,7 +602,9 @@ body {
     margin-top: 10px;
     line-height: 25px;
 }
-
+#open{
+    margin-right: 60px;
+}
 @media screen and (max-width: 767px) {
     #myFooter {
         text-align: center;
@@ -623,3 +652,52 @@ body{
      justify-content: space-around;
     display: flex;
 }
+
+//collapse function
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+.col-md-4{
+    margin-right: -35px;
+    margin-bottom: -115px;
+}
+.row{
+    margin-left: 105px;
+}
+// #background h2{
+//     font-family: $bestselerfont !important;
+// }
+

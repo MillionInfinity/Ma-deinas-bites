@@ -20,6 +20,9 @@ h4{
     font-family: $parafont;
     font-size: 15px;
 }
+h6{
+    font-size: 15px;  //for the coockies price
+}
 #cover{
     width:100% !important;
 }
@@ -73,19 +76,25 @@ left:50px;
     z-index: 500;
 
 }
-#background{
-    font-size:20px;
+#background{    //all cookies
+font-weight: bold;
+font-size:12px;
 color:$fontcolor; 
-z-index: 514;
+z-index: 14;
 position: absolute;
-top:-155px;
-font-family:$bestselerfont !important;
+top:-150px;
+font-family:Arial, Helvetica, sans-serif !important;
 left:10px;
 }
-// .container-fluid .mi{
-//     position: relative;
-//     left:150px;
-// }
+#background span{
+      background : #E5E9ED;
+      border:2px solid $fontcolor; // paddig: 0 15px;
+      padding: 10px;
+}
+.container-fluid .mi{
+    position: relative;
+    left:150px;
+}
 #shop{
     position: relative;
     top:-150px;
@@ -94,15 +103,15 @@ left:10px;
 }
 // first page done
  #seller{
-    font-family:$bestselerfont;
+    font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-top:-120px;
     margin-bottom: 35px;
-    
+    font-size: 20PX;
 }
 .jumbotron
 {
-    margin-top:100px;    
+    margin-top:200px;    
     background-color:rgb(216, 217, 218);
 }
 #background {
@@ -120,15 +129,7 @@ left:10px;
         z-index: -1;
     }
 
-    span { 
-        /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
-        background:  #E5E9ED; 
-        border:2px solid $fontcolor;
-        padding: 0 15px;
-        margin-bottom: 150px; 
-       
-    }
-}
+  }
  .texts h2{
     margin-bottom: 350px !important;
     padding-bottom: 50px;
@@ -168,7 +169,17 @@ left:10px;
 }
 
 ////main start
-
+.col-sm-6 #abc {
+   margin-right: -500px;
+   margin-left: 15px; 
+}
+// .col-sm-6 #cde {
+//     // margin-left:px;
+// }
+.col-sm-6 #bcd {
+    margin-left:5px;
+    margin-right:-5px;
+}
 body {
 	margin-top: 60px;
 	font-size: 14px;
@@ -509,7 +520,7 @@ body {
     height: 55px;
 }
 
-#myFooter .footer-copyright p {
+#myFooter .footer-copyright {
     margin: 10px;
     color: #ccc;
 }
@@ -521,21 +532,26 @@ body {
 }
 
 #myFooter h5 {
-    font-size: 18px;
+    font-size: 13px;
     color: $fontcolor;
-    font-weight: bold;
+    // font-weight: old;
     margin-top: 30px;
 }
 
 #myFooter h2 a{
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     color:$fontcolor;
 }
-
+span,
+.hours,
+.address,
 #myFooter a {
-    color: $fontcolor;
+    color: black;
+    font-family: $parafont;
     text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 #myFooter a:hover,
@@ -586,7 +602,9 @@ body {
     margin-top: 10px;
     line-height: 25px;
 }
-
+#open{
+    margin-right: 60px;
+}
 @media screen and (max-width: 767px) {
     #myFooter {
         text-align: center;
@@ -672,7 +690,13 @@ body{
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
 }
-
+.col-md-4{
+    margin-right: -35px;
+    margin-bottom: -115px;
+}
+.row{
+    margin-left: 105px;
+}
 // #background h2{
 //     font-family: $bestselerfont !important;
 // }
